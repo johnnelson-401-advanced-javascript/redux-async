@@ -7,7 +7,7 @@ const Characters = ({ characters }) => {
   const notFound = 'https://media2.giphy.com/media/12ku9ihOJlJ36U/source.gif';
   const characterList = characters.map(character => (
     <li key={character._id}>
-      <Character key={character._id} name={character.name} photoUrl={character.photoUrl || notFound} />
+      <Character key={character._id} name={character.name} photoUrl={character.photoUrl || notFound}  />
     </li>
   ));
   return (

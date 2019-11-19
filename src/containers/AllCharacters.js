@@ -12,7 +12,6 @@ export default function AllCharacters() {
   
   
   useEffect(() => {
-    
     if(characters.length <= 0) {
       dispatch(setCharacters());
     }
