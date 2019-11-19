@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character Display component renders a character display card 1`] = `
+<figure
+  className="characterFigure"
+>
+  <img
+    alt="name"
+    src="nope"
+  />
+  <figcaption>
+    name
+  </figcaption>
+</figure>
+`;
