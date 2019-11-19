@@ -1,0 +1,14 @@
+.characterFigure {
+  display: inline-flex;
+  flex-direction: column;
+  list-style-type: none;
+  background: darkgoldenrod;
+  border: 1px solid brown;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 5px;
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}

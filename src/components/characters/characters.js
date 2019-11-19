@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Character from './character';
+import styles from './characters.css';
 
 const Characters = ({ characters }) => {
+  const notFound = 'https://media2.giphy.com/media/12ku9ihOJlJ36U/source.gif';
   const characterList = characters.map(character => (
     <li key={character._id}>
       <Character key={character._id} name={character.name} photoUrl={character.photoUrl || notFound} />
     </li>
   ));
-  const notFound = 'https://media2.giphy.com/media/12ku9ihOJlJ36U/source.gif';
   return (
-    <ul>
+    <ul className={styles.Characters}>
       {characterList}
     </ul>
   );
