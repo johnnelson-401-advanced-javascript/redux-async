@@ -10,6 +10,7 @@ export default function AllCharacters() {
   const dispatch = useDispatch();
   const loading = useSelector(getCharactersLoading);
   
+  
   useEffect(() => {
     
     if(characters.length <= 0) {

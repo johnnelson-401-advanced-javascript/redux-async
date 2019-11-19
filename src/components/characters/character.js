@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Character = ({ name, photoUrl }) => (
   <figure>
-    <img src={photoUrl || 'https://media2.giphy.com/media/12ku9ihOJlJ36U/source.gif'} alt={name} />
+    <img src={photoUrl} alt={name} />
     <figcaption>{name}</figcaption>
   </figure>
 );

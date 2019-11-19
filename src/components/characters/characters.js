@@ -5,9 +5,10 @@ import Character from './character';
 const Characters = ({ characters }) => {
   const characterList = characters.map(character => (
     <li key={character._id}>
-      <Character key={character._id} name={character.name} photoUrl={character.photoUrl} />
+      <Character key={character._id} name={character.name} photoUrl={character.photoUrl || notFound} />
     </li>
   ));
+  const notFound = 'https://media2.giphy.com/media/12ku9ihOJlJ36U/source.gif';
   return (
     <ul>
       {characterList}
