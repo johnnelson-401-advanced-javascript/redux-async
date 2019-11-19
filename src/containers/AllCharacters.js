@@ -11,12 +11,11 @@ export default function AllCharacters() {
   const loading = useSelector(getCharactersLoading);
   
   useEffect(() => {
-    console.log(characters);
     
-    if(characters.length < 1) {
+    if(characters.length <= 0) {
       dispatch(setCharacters());
     }
-  }, []);
+  }, [characters]);
   
   if(loading) return <h1>Loading Characters</h1>;
   

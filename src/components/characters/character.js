@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Character = ({ character }) => (
+const Character = ({ name, photoUrl }) => (
   <figure>
-    <img src={character.photoUrl} alt={character.name} />
-    <figcaption>{character.name}</figcaption>
+    <img src={photoUrl || 'https://media2.giphy.com/media/12ku9ihOJlJ36U/source.gif'} alt={name} />
+    <figcaption>{name}</figcaption>
   </figure>
 );
 
 Character.propTypes = {
-  character: PropTypes.shape({
-    photoUrl: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
-  }).isRequired
+  name: PropTypes.string.isRequired,
+  photoUrl: PropTypes.string
 };
 
 export default Character;
