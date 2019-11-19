@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 const Character = ({ character }) => (
   <figure>
-    <img src={character.img} alt={character.name} />
+    <img src={character.photoUrl} alt={character.name} />
     <figcaption>{character.name}</figcaption>
   </figure>
 );
 
 Character.propTypes = {
   character: PropTypes.shape({
-    img: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired
   }).isRequired
 };
