@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route  path='/' component={AllCharacters} />
+        <Route path='/' component={AllCharacters} />
       </Switch>
     </Router>
   );
