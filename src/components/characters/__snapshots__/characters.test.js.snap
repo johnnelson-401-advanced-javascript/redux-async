@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters list component renders a list of characters 1`] = `
+<ul
+  className="Characters"
+>
+  <li
+    key="123"
+  >
+    <Character
+      key="123"
+      name="name"
+      photoUrl="nope"
+    />
+  </li>
+</ul>
+`;
